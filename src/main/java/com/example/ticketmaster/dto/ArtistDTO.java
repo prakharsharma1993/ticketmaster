@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 import reactor.core.publisher.Flux;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -20,6 +21,6 @@ public class ArtistDTO {
     private String imgSrc;
     private String url;
     private String rank;
-    private List<Event> events;
+    private List<Event> events = new ArrayList<>();
 
 }

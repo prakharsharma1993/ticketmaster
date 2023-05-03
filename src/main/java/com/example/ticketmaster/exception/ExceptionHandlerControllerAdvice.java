@@ -13,7 +13,6 @@ public class ExceptionHandlerControllerAdvice {
 
     @ExceptionHandler(ArtistNotFoundException.class)
     public ResponseEntity handleException(ArtistNotFoundException ex) {
-
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getLocalizedMessage());
     }
 
